@@ -1,10 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aiml version="2.0">
-	<!-- insert your AIML categories here -->
+	<category>
+    <pattern>*</pattern>
+    <template>I'm sorry. I have no answer for that. Please type 
+    "Start" to start from the beginning.</template>
+  </category>
+  
 	<category>
 	    <pattern>hi</pattern>
 	    <template>Hello! Let's try to find you a computing career path tailored
-	    to your likes. Type Start to begin.</template>
+	    to your likes. Type Start to begin!</template>
 	</category>
 	
 	<category>
