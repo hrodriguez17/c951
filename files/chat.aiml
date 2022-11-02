@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+	<!-- insert your AIML categories here -->
+	<category>
+	    <pattern>hi</pattern>
+	    <template>Hello! Let's try to find you a computing career path tailored
+	    to your likes. Type Start to begin.</template>
+	</category>
+	
+	<category>
+    <pattern>start</pattern>
+    <template>Ok let's start! Are you interested in more programming or 
+    business centric jobs?
+    <button>
+        <text>Programming</text>
+        <postback>program</postback>
+    </button>
+    <button>
+        <text>Business</text>
+        <postback>business</postback>
+    </button>
+    </template>
+    </category>
+    
+    <category>
+        <pattern>program</pattern>
+        <template>Ok interesting! Are you more inclined to designing and
+        creativity, or more interested in protecting others and security?
+        
+        <button>
+            <text>Design and Creativity</text>
+            <postback>design</postback>
+        </button>
+        
+        <button>
+            <text>Protection and Security</text>
+            <postback>security</postback>
+        </button>
+        
+        <button>
+            <text>Not Sure Yet</text>
+            <postback>cs</postback>
+        </button>
+        
+        </template>
+    </category>
+    
+    <category>
+        <pattern>design</pattern>
+        <template>Software Development seems like a good fit! Here is a 
+        link for more information on a Software Development Degree:
+        <link>
+            <text>Click Here</text>
+            <url>https://www.wgu.edu/online-it-degrees/software-development-bachelors-program.html</url>
+        </link>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>security</pattern>
+        <template>Cybersecurity seems like a good fit! Here is a 
+        link for more information on a Cybersecurity Degree:
+        <link>
+            <text>Click Here</text>
+            <url>https://www.wgu.edu/online-it-degrees/cybersecurity-information-assurance-bachelors-program.html</url>
+        </link>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>cs</pattern>
+        <template>Computer Science seems like a good fit! Here is a 
+        link for more information on a Computer Science Degree:
+        <link>
+            <text>Click Here</text>
+            <url>https://www.wgu.edu/online-it-degrees/computer-science.html</url>
+        </link>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>business</pattern>
+        <template>Ok interesting! Are you good at Mathematics?
+        
+        <button>
+            <text>Yes</text>
+            <postback>yesm</postback>
+        </button>
+        
+        <button>
+            <text>No</text>
+            <postback>nom</postback>
+        </button>
+        
+        </template>
+    </category>
+    
+    <category>
+        <pattern>yesm</pattern>
+        <template>Great! Are you more interested in analysis or
+        security?
+        
+        <button>
+            <text>Analysis</text>
+            <postback>analysis</postback>
+        </button>
+        
+        <button>
+            <text>Security</text>
+            <postback>security</postback>
+        </button>
+        
+        <button>
+            <text>Unsure</text>
+            <postback>it</postback>
+        </button>
+        
+        </template>
+    </category>
+    
+    <category>
+        <pattern>analysis</pattern>
+        <template>Data Management seems like a good fit! Here is a 
+        link for more information on a Data Management Degree:
+        <link>
+            <text>Click Here</text>
+            <url>https://www.wgu.edu/online-it-degrees/data-management-analytics-bachelors-program.html</url>
+        </link>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>it</pattern>
+        <template>Information Technology seems like a good fit! Here is a 
+        link for more information on a Information Technology Degree:
+        <link>
+            <text>Click Here</text>
+            <url>https://www.wgu.edu/online-it-degrees/information-technology-bachelors-program.html</url>
+        </link>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>nom</pattern>
+        <template>No worries! Do you like to troubleshoot systems or 
+        practice security more?
+        
+        <button>
+            <text>Troubleshooting</text>
+            <postback>it</postback>
+        </button>
+        
+        <button>
+            <text>Security</text>
+            <postback>security</postback>
+        </button>
+        
+        </template>
+    </category>
+
+</aiml>
